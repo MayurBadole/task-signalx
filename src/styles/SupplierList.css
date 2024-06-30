@@ -1,0 +1,121 @@
+.supplier-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.supplier-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.supplier-table th,
+.supplier-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.supplier-table th {
+  background-color: #f2f2f2;
+}
+
+.supplier-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.supplier-table td button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.supplier-table td button:hover {
+  background-color: #0056b3;
+}
+
+/* SupplierForm.css */
+
+.supplier-form-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the popup is above other content */
+}
+
+.supplier-form {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.supplier-form h2 {
+  margin: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.supplier-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.supplier-form input[type="text"],
+.supplier-form input[type="email"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.supplier-form input[type="text"]:focus,
+.supplier-form input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff; /* Focus color */
+}
+
+.supplier-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.supplier-form button:hover {
+  background-color: #0056b3;
+}
+
+.supplier-form .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.supplier-form .close:hover {
+  color: #555;
+}
+
+
+.Actions{
+    display: flex;
+    justify-items: auto;
+    gap: 10px;
+}
